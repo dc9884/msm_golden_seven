@@ -1,0 +1,13 @@
+<h1>Director Details</h1>
+
+<p><%= @director_name %></p>
+
+<img src= "<%= @director_image %>">
+
+<p>Created <%= time_ago_in_words(@created) %> ago</p>
+
+<a href="/directors">Go back</a>
+
+<a href="/directors/<%= @director_id %>/edit">Edit</a>
+
+<a href="/directors/<%= @director_id %>/delete">Delete</a>
